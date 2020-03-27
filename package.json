@@ -16,9 +16,12 @@
   },
   "scripts": {
     "lint": "eslint --cache --format codeframe *.js",
-    "release": "standard-version"
+    "build": "rollup --config",
+    "release": "standard-version",
+    "prepack": "npm run build"
   },
-  "browser": "index.js",
+  "main": "dist/iframe-click-to-play.common.js",
+  "module": "dist/iframe-click-to-play.esm.js",
   "publishConfig": {
     "access": "public"
   },
@@ -32,6 +35,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "rollup": "^2.2.0",
     "standard-version": "^7.1.0"
   }
 }
