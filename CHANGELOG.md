@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/mvsde/iframe-click-to-play/compare/v0.1.1...v0.1.2) (2020-03-27)
+
+
+### Features
+
+* Add dedicated trigger ([ed66630](https://github.com/mvsde/iframe-click-to-play/commit/ed66630eb2bbd5ea58d9345562a4f71cb5e74b12))
+* Transpile CommonJS build for older browsers ([bef4804](https://github.com/mvsde/iframe-click-to-play/commit/bef48049ddb27b37ecced0770e286bea350a837a))
+
 ### [0.1.1](https://github.com/mvsde/iframe-click-to-play/compare/v0.1.0...v0.1.1) (2020-03-27)
 
 
