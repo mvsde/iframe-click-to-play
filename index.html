@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@mvsde/iframe-click-to-play</title>
+  </head>
+  <body>
+
+    <iframe
+      class="iframe"
+      data-src="https://www.youtube.com/embed/OrxmtDw4pVI"
+      width="960"
+      height="540"
+    ></iframe>
+
+    <div class="fallback">
+      <h2>YouTube Video Embed</h2>
+      <p>Click to load the embedded YouTube video.</p>
+      <button>Load video</button>
+    </div>
+
+    <script type="module">
+      import IframeClickToPlay from './index.js'
+
+      const iframe = document.querySelector('.iframe')
+      const fallback = document.querySelector('.fallback')
+
+      new IframeClickToPlay(iframe, fallback).init()
+    </script>
+
+  </body>
+</html>
