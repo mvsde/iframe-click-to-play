@@ -28,7 +28,13 @@
   "eslintConfig": {
     "extends": "standard"
   },
+  "browserslist": [
+    "> 0.5%",
+    "not dead"
+  ],
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.1",
@@ -36,6 +42,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "rollup": "^2.2.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^5.3.0",
     "standard-version": "^7.1.0"
   }
 }
