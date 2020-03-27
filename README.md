@@ -27,7 +27,7 @@ The `<iframe>` has to have a `data-src` attribute pointing to the desired source
 <div class="fallback">
   <h2>YouTube Video Embed</h2>
   <p>Click to load the embedded YouTube video.</p>
-  <button>Load video</button>
+  <button class="trigger">Load video</button>
 </div>
 ```
 
@@ -40,6 +40,7 @@ import IframeClickToPlay from '@mvsde/iframe-click-to-play'
 
 const iframe = document.querySelector('.iframe')
 const fallback = document.querySelector('.fallback')
+const trigger = document.querySelector('.trigger')
 
-new IframeClickToPlay(iframe, fallback).init()
+new IframeClickToPlay(iframe, fallback, trigger).init()
 ```
