@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "author": {
     "name": "Fynn Becker",
-    "email": "post@fynn.be"
+    "email": "fynn@hey.com"
   },
   "license": "Hippocratic License 2.0",
   "homepage": "https://github.com/mvsde/iframe-click-to-play",
@@ -33,17 +33,17 @@
     "not dead"
   ],
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "eslint": "^6.8.0",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-babel": "^5.1.0",
+    "eslint": "^7.6.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "rollup": "^2.6.1",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-terser": "^5.3.0",
-    "standard-version": "^8.0.1"
+    "rollup": "^2.23.1",
+    "rollup-plugin-terser": "^7.0.0",
+    "standard-version": "^8.0.2"
   }
 }

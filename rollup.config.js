@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel'
+import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 
 export default [
@@ -18,10 +18,12 @@ export default [
     output: {
       file: 'dist/iframe-click-to-play.common.js',
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
+      exports: 'default'
     },
     plugins: [
       babel({
+        babelHelpers: 'bundled',
         presets: ['@babel/env']
       }),
       terser()
