@@ -15,7 +15,7 @@
     "url": "https://github.com/mvsde/iframe-click-to-play/issues"
   },
   "scripts": {
-    "lint": "eslint --cache --format codeframe *.js",
+    "lint": "eslint --format codeframe *.js",
     "build": "rollup --config",
     "release": "standard-version",
     "prepack": "npm run build"
@@ -25,13 +25,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "eslintConfig": {
-    "extends": "standard"
-  },
-  "browserslist": [
-    "> 0.5%",
-    "not dead"
-  ],
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
