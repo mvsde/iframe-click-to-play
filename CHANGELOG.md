@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/mvsde/iframe-click-to-play/compare/v0.1.2...v0.2.0) (2020-08-10)
+
+
+### Features
+
+* Update Hippocratic License to v2.1 ([a5a01e4](https://github.com/mvsde/iframe-click-to-play/commit/a5a01e4b77fc8b4b3376abb7dfdc589fc0c0a005))
+
 ### [0.1.2](https://github.com/mvsde/iframe-click-to-play/compare/v0.1.1...v0.1.2) (2020-03-27)
 
 
