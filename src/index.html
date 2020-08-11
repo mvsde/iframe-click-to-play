@@ -11,16 +11,56 @@
   <body>
 
     <header>
-      <h1>iframe Click-to-Play</h1>
-
       <nav>
+        <p><code>&lt;iframe&gt;</code> Click-to-Play</p>
         <ul>
           <li aria-current="page">Home</li>
           <li><a href="/standalone.html">Standalone</a></li>
           <li><a href="/container.html">Container</a></li>
+          <li><a href="https://github.com/mvsde/iframe-click-to-play" target="_blank" rel="noopener">GitHub ↗</a></li>
         </ul>
       </nav>
+
+      <h1><code>&lt;iframe&gt;</code> Click-to-Play</h1>
+      <p>Get consent from website visitors to load iframes.</p>
     </header>
+
+    <main>
+      <hr>
+
+      <p>Some <code>&lt;iframe&gt;</code>s might save cookies or do other kinds of tracking. This isn't allowed under GDPR law without prior consent from the user. A “click-to-play” solution helps with this situation.</p>
+
+      <hr>
+
+      <h2>Installation with <code>npm</code></h2>
+      <pre><code>npm install @mvsde/iframe-click-to-play</code></pre>
+
+      <hr>
+
+      <h2>Installation with a CDN</h2>
+
+      <h3>All browsers</h3>
+      <p>Use this for the widest browser support.</p>
+      <pre><code>&lt;script src="https://unpkg.com/@mvsde/iframe-click-to-play" defer&gt;&lt;/script&gt;</code></pre>
+
+      <h3>Modern browsers</h3>
+      <p>Use this to support only modern browsers which understand <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank" rel="noopener">ES Modules ↗</a>.</p>
+      <pre><code>&lt;script src="https://unpkg.com/@mvsde/iframe-click-to-play/dist/iframe-click-to-play.esm.js" type="module"&gt;&lt;/script&gt;</code></pre>
+
+      <hr>
+
+      <h2>Usage</h2>
+      <p>Take a look at the <a href="https://github.com/mvsde/iframe-click-to-play#usage" target="_blank" rel="noopener">repository readme ↗</a> or the source code for the demos:</p>
+      <ul>
+        <li><a href="/standalone.html">Standalone</a></li>
+        <li><a href="/container.html">Container</a></li>
+      </ul>
+    </main>
+
+    <footer>
+      <hr>
+      <p>Developed by <a href="https://fynn.be">Fynn Becker</a> and licensed under <a href="https://firstdonoharm.dev">Hippocratic License</a>.</p>
+    </footer>
 
   </body>
 </html>

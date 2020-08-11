@@ -17,22 +17,34 @@
 
       new IframeClickToPlay(iframe, fallback, trigger).init()
     </script>
+
+    <style>
+      iframe {
+        width: 100%;
+        border: 0;
+      }
+    </style>
   </head>
   <body>
 
     <header>
-      <h1>Container</h1>
-
       <nav>
+        <p><code>&lt;iframe&gt;</code> Click-to-Play</p>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/standalone.html">Standalone</a></li>
           <li aria-current="page">Container</li>
+          <li><a href="https://github.com/mvsde/iframe-click-to-play" target="_blank" rel="noopener">GitHub ↗</a></li>
         </ul>
       </nav>
+
+      <h1>Container</h1>
+      <p>A wrapper element arond the <code>&lt;iframe&gt;</code> for better control (for example responsive embeds).</p>
     </header>
 
     <main>
+      <hr>
+
       <div class="iframe">
         <iframe
           data-src="https://www.youtube.com/embed/OrxmtDw4pVI"
@@ -47,6 +59,11 @@
         <button class="trigger">Load video</button>
       </div>
     </main>
+
+    <footer>
+      <hr>
+      <p>Developed by <a href="https://fynn.be">Fynn Becker</a> and licensed under <a href="https://firstdonoharm.dev">Hippocratic License</a>.</p>
+    </footer>
 
   </body>
 </html>
