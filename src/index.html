@@ -3,32 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@mvsde/iframe-click-to-play</title>
+
+    <title>iframe Click-to-Play</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
   </head>
   <body>
 
-    <iframe
-      class="iframe"
-      data-src="https://www.youtube.com/embed/OrxmtDw4pVI"
-      width="960"
-      height="540"
-    ></iframe>
+    <header>
+      <h1>iframe Click-to-Play</h1>
 
-    <div class="fallback">
-      <h2>YouTube Video Embed</h2>
-      <p>Click to load the embedded YouTube video.</p>
-      <button class="trigger">Load video</button>
-    </div>
-
-    <script type="module">
-      import IframeClickToPlay from './main.js'
-
-      const iframe = document.querySelector('.iframe')
-      const fallback = document.querySelector('.fallback')
-      const trigger = document.querySelector('.trigger')
-
-      new IframeClickToPlay(iframe, fallback, trigger).init()
-    </script>
+      <nav>
+        <ul>
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/standalone.html">Standalone</a></li>
+          <li><a href="/container.html">Container</a></li>
+        </ul>
+      </nav>
+    </header>
 
   </body>
 </html>

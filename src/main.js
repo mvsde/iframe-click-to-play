@@ -17,7 +17,13 @@ class IframeClickToPlay {
   }
 
   play () {
-    this.iframe.src = this.iframe.dataset.src
+    if (this.iframe.tagName === 'IFRAME') {
+      this.iframe.src = this.iframe.dataset.src
+    } else {
+      const descendant = this.iframe.querySelector('iframe')
+      descendant.src = descendant.dataset.src
+    }
+
     this.iframe.hidden = false
 
     this.fallback.remove()

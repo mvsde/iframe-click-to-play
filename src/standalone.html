@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Standalone | iframe Click-to-Play</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+
+    <script type="module">
+      import IframeClickToPlay from './main.js'
+
+      const iframe = document.querySelector('.iframe')
+      const fallback = document.querySelector('.fallback')
+      const trigger = document.querySelector('.trigger')
+
+      new IframeClickToPlay(iframe, fallback, trigger).init()
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Standalone</h1>
+
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/standalone.html" aria-current="page">Standalone</a></li>
+          <li><a href="/container.html">Container</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <iframe
+        class="iframe"
+        data-src="https://www.youtube.com/embed/OrxmtDw4pVI"
+        width="960"
+        height="540"
+      ></iframe>
+
+      <div class="fallback">
+        <h2>YouTube Video Embed</h2>
+        <p>Click to load the embedded YouTube video.</p>
+        <button class="trigger">Load video</button>
+      </div>
+    </main>
+
+  </body>
+</html>

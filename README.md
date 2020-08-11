@@ -1,8 +1,8 @@
-# `<iframe>` click-to-play
+# iframe Click-to-Play
 
-Some `<iframe>`s might save cookies or do other kinds of tracking. This isn't allowed under GDPR law without prior consent from the user. A "click-to-play" solution helps with this situation.
+Some `<iframe>`s might save cookies or do other kinds of tracking. This isn't allowed under GDPR law without prior consent from the user. A “click-to-play” solution helps with this situation.
 
-[Demo](https://iframe-click-to-play.fynn.be)
+[Demos →](https://iframe-click-to-play.fynn.be)
 
 ## Installation
 
@@ -14,7 +14,11 @@ npm install @mvsde/iframe-click-to-play
 
 ### Markup
 
-The `<iframe>` has to have a `data-src` attribute pointing to the desired source. A fallback element is required which may have arbitrary content.
+Rename the `src` attribute of the `<iframe>` to `data-src` This makes sure no external content gets loaded without prior consent. A fallback element is required which may have arbitrary content. The trigger button can be part of the fallback element, but doesn’t need to be.
+
+#### Standalone `<iframe>`
+
+[Demo for the standalone variant →](https://iframe-click-to-play.fynn.be/standalone.html)
 
 ```html
 <iframe
@@ -31,9 +35,32 @@ The `<iframe>` has to have a `data-src` attribute pointing to the desired source
 </div>
 ```
 
+#### `<iframe>` within a container
+
+[Demo for the container variant →](https://iframe-click-to-play.fynn.be/container.html)
+
+The `<iframe>` can be nested inside a container. The script automatically searches for the first descendant `<iframe>`.
+
+```html
+<div class="iframe">
+  <iframe
+    class="iframe"
+    data-src="https://www.youtube.com/embed/OrxmtDw4pVI"
+    width="960"
+    height="540"
+  ></iframe>
+</div>
+
+<div class="fallback">
+  <h2>YouTube Video Embed</h2>
+  <p>Click to load the embedded YouTube video.</p>
+  <button class="trigger">Load video</button>
+</div>
+```
+
 ### JavaScript
 
-Select the `<iframe>` and fallback elements and create a new `IframeClickToPlay` instance.
+Select the `<iframe>` or the element containing it, the fallback element, and the trigger button. Create a new `IframeClickToPlay` instance.
 
 ```js
 import IframeClickToPlay from '@mvsde/iframe-click-to-play'
