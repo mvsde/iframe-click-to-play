@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/mvsde/iframe-click-to-play/compare/v0.2.0...v0.3.0) (2020-08-11)
+
+
+### Features
+
+* Add container mode ([444094b](https://github.com/mvsde/iframe-click-to-play/commit/444094b266a7967cc1b2c14a5c650e9d587f6454))
+
 ## [0.2.0](https://github.com/mvsde/iframe-click-to-play/compare/v0.1.2...v0.2.0) (2020-08-10)
 
 
