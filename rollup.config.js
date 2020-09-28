@@ -18,8 +18,7 @@ export default [
     output: {
       file: 'dist/iframe-click-to-play.common.js',
       format: 'cjs',
-      sourcemap: true,
-      exports: 'default'
+      sourcemap: true
     },
     plugins: [
       babel({

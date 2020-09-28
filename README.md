@@ -63,11 +63,11 @@ The `<iframe>` can be nested inside a container. The script automatically search
 Select the `<iframe>` or the element containing it, the fallback element, and the trigger button. Create a new `IframeClickToPlay` instance.
 
 ```js
-import IframeClickToPlay from '@mvsde/iframe-click-to-play'
+import { IframeClickToPlay } from '@mvsde/iframe-click-to-play'
 
 const iframe = document.querySelector('.iframe')
 const fallback = document.querySelector('.fallback')
 const trigger = document.querySelector('.trigger')
 
-new IframeClickToPlay(iframe, fallback, trigger).init()
+new IframeClickToPlay({ iframe, fallback, trigger }).init()
 ```

@@ -1,11 +1,12 @@
-class IframeClickToPlay {
+export class IframeClickToPlay {
   /**
    * Create new iframe click to play instance
-   * @param {HTMLElement} iframe Target iframe
-   * @param {HTMLElement} fallback Fallback content
-   * @param {HTMLElement} trigger Click-to-play trigger
+   * @param {Object} options Options
+   * @param {HTMLElement} options.iframe Target iframe
+   * @param {HTMLElement} options.fallback Fallback content
+   * @param {HTMLButtonElement} options.trigger Click-to-play trigger
    */
-  constructor (iframe, fallback, trigger) {
+  constructor ({ iframe, fallback, trigger }) {
     this.iframe = iframe
     this.fallback = fallback
     this.trigger = trigger
@@ -30,5 +31,3 @@ class IframeClickToPlay {
     this.trigger.remove()
   }
 }
-
-export default IframeClickToPlay

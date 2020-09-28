@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
 
     <script type="module">
-      import IframeClickToPlay from './main.js'
+      import { IframeClickToPlay } from './main.js'
 
       const iframe = document.querySelector('.iframe')
       const fallback = document.querySelector('.fallback')
       const trigger = document.querySelector('.trigger')
 
-      new IframeClickToPlay(iframe, fallback, trigger).init()
+      new IframeClickToPlay({ iframe, fallback, trigger }).init()
     </script>
 
     <style>
