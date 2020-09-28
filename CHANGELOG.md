@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/mvsde/iframe-click-to-play/compare/v0.3.0...v0.4.0) (2020-09-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* The default export has been replaced with a named export. The arguments have been replaced by an options object.
+
+### Features
+
+* Use explicit naming and exports ([b3342e3](https://github.com/mvsde/iframe-click-to-play/commit/b3342e300631cd118666b9e3ee91092815950f47))
+
+
+### Bug Fixes
+
+* Avoid browser history entry ([9dc42c7](https://github.com/mvsde/iframe-click-to-play/commit/9dc42c788b1a81c3cd7a0056cd6249e48c303c9a))
+
 ## [0.3.0](https://github.com/mvsde/iframe-click-to-play/compare/v0.2.0...v0.3.0) (2020-08-11)
 
 
