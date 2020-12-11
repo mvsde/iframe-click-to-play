@@ -44,7 +44,6 @@ The `<iframe>` can be nested inside a container. The script automatically search
 ```html
 <div class="iframe">
   <iframe
-    class="iframe"
     data-src="https://www.youtube.com/embed/OrxmtDw4pVI"
     width="960"
     height="540"
